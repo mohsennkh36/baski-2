@@ -1,0 +1,18 @@
+Microsoft Windows [Version 10.0.19045.5737]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\codyad\run\2-html\practic\done\j1>git config --global user.name "mohsen"
+
+D:\codyad\run\2-html\practic\done\j1>git config --global user.name "mohsenn.kh36@gmail.com"
+
+D:\codyad\run\2-html\practic\done\j1>قسمت بالا در در cmd
+اجرا میشود
+PS D:\codyad\run\2-html\practic\done\j1> git init
+Initialized empty Git repository in D:/codyad/run/2-html/practic/done/j1/.git/
+PS D:\codyad\run\2-html\practic\done\j1>برای اجرای گیت روی کد یاد از دستور بالا در قسمت ترمینال استفاده میکنیم 
+
+
+
+
+
+
