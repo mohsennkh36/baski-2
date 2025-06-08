@@ -9,8 +9,89 @@ D:\codyad\run\2-html\practic\done\j1>قسمت بالا در در cmd
 اجرا میشود
 PS D:\codyad\run\2-html\practic\done\j1> git init
 Initialized empty Git repository in D:/codyad/run/2-html/practic/done/j1/.git/
-PS D:\codyad\run\2-html\practic\done\j1>برای اجرای گیت روی کد یاد از دستور بالا در قسمت ترمینال استفاده میکنیم 
+PS D:\codyad\run\2-html\practic\done\j1>برای اجرای گیت روی کد یاد از دستور بالا در قسمت ترمینال استفاده میکنیم
 
+
+PS D:\codyad\run\2-html\practic\done\j1> git add . هر آنچه که تغییر کرده وانجام داده ایم را اضافه میکنیم
+warning: in the working copy of 'assets/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/materialize.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/workspace.code-workspace', LF will be replaced by CRLF the next time Git touches it
+
+
+PS D:\codyad\run\2-html\practic\done\j1> git status وضعیت تغییرات را مشاهده میکنیم
+On branch master
+
+No commits yet
+
+  (use "git rm --cached <file>..." to unstage)
+        new file:   assets/LICENSE
+        new file:   assets/README.md
+        new file:   assets/css/materialize.css
+        new file:   assets/css/materialize.min.css
+        new file:   assets/js/main.js
+        new file:   assets/js/materialize.js
+        new file:   assets/js/materialize.min.js
+        new file:   assets/style.css
+        new file:   assets/workspace.code-workspace
+        new file:   git,run in terminal,config user and email.txt
+        new file:   index.html
+
+
+
+PS D:\codyad\run\2-html\practic\done\j1> git commit -m "first commit after iniializing"
+تمام تغییرات را با دستور گیت کامیت تایید میکنیم
+
+[master (root-commit) 5e0b641] first commit after iniializing
+ 11 files changed, 21612 insertions(+)
+ create mode 100644 assets/LICENSE
+ create mode 100644 assets/README.md
+ create mode 100644 assets/css/materialize.css
+ create mode 100644 assets/css/materialize.min.css
+ create mode 100644 assets/js/main.js
+ create mode 100644 assets/js/materialize.js
+ create mode 100644 assets/js/materialize.min.js
+ create mode 100644 assets/style.css
+ create mode 100644 assets/workspace.code-workspace
+ create mode 100644 git,run in terminal,config user and email.txt
+ create mode 100644 index.html
+PS D:\codyad\run\2-html\practic\done\j1>  
+
+
+PS D:\codyad\run\2-html\practic\done\j1> git log
+
+با دستور گیت لاگ کل تغییرات را همراه با کلید های منحصر به فرد مربوط به آن تغییر را برای ما نمایش میدهد
+Author: mohsenn.kh36@gmail.com <you@example.com"mohsenn.kh36@gmail.com>
+Date:   Fri Jun 6 11:53:29 2025 +0330
+
+    delet main.css
+
+commit 7d94b82385899830ad80c847d75449de04abcc42
+Author: mohsenn.kh36@gmail.com <you@example.com"mohsenn.kh36@gmail.com>
+Date:   Fri Jun 6 11:27:17 2025 +0330
+
+    3rd commit
+
+commit 4465cbb9a40149f41b52a3156aa71347cf02db54
+Author: mohsenn.kh36@gmail.com <you@example.com"mohsenn.kh36@gmail.com>
+
+PS D:\codyad\run\2-html\practic\done\j1> git log --oneline
+گیت لاگ وان لاین تغییرات را همراه با قسمتی از کلید تغییرات به صورت کوتاه برای ما نمایش میدهد
+b4e017c (HEAD -> master) delet main.css
+7d94b82 3rd commit
+4465cbb second commit
+5e0b641 first commit after iniializing
+
+PS D:\codyad\run\2-html\practic\done\j1> git reset 7d94b82
+
+گیت ریست به همراه قسمتی از کلید کد تغییرات میتواند ما را به قسمتی قبل از انجام آن تغییرات برگرداند
+
+Unstaged changes after reset:
+D       assets/css/main.css
+
+PS D:\codyad\run\2-html\practic\done\j1> git reset --hard
+اگر فایلی را پاک کرده باشیم با دستور بالا آن را برمیگرداند
+HEAD is now at 7d94b82 3rd commit
 
 
 
